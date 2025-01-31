@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   height: 100%;
 }
@@ -87,6 +94,7 @@ body {
   padding: 20px;
   position: absolute;
   top: 30%;
+  font-family:'S-CoreDream-3Light';
 }
 
 .new-label {
@@ -103,6 +111,7 @@ body {
   top: 1%;
   left: 11%;
   z-index: 2;
+  font-family:'S-CoreDream-3Light';
 }
 
 .new-label2 {
@@ -120,6 +129,7 @@ body {
   width: 130%;
   font-size: 18px;
   padding-left: 5%;
+  font-family:'S-CoreDream-3Light';
 }
 
 .main-title {
@@ -129,6 +139,7 @@ body {
   position: absolute;
   top: 52%;
   left: 2%;
+  font-family:'S-CoreDream-3Light';
 }
 
 .subtitle {
@@ -150,22 +161,22 @@ body {
   right: 10%;
 }
 
-.intro-section {
-  width: 80%;
-  height: 80%;
-}
-
-.title {
+.introduce {
   width: 100%;
-  font-size: 2rem;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  margin-left: -50%;
+  font-size: 3rem;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family:'S-CoreDream-3Light';
 }
 
-.content-box {
+.activity-box {
   display: flex;
   align-items: center;
   background-color: #fff;
@@ -173,9 +184,13 @@ body {
   border-radius: 20px;
   padding: 20px;
   position: absolute;
-  width: 78%;
+  top: 115%;
+  left: 57%;
+  margin-left: -50%;
+  width: 86%;
   justify-content: center;
-  height: 57%;
+  height: 72%;
+  font-family:'S-CoreDream-3Light';
 }
 
 .side-circle {
@@ -189,124 +204,147 @@ body {
   font-size: 1.2rem;
   font-weight: bold;
   position: absolute;
-  left: -30px;
+  left: -5%;
+  top: 5%;
   background-color: #fff;
 }
 
-.icon-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 56px;
-  padding: 38px;
-  width: 100%;
-  justify-items: center;
-  align-items: center;
-}
-
 .icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 20px;
+  position: absolute;
+  top: 5%;
   width: 95%;
-  height: 100%;
+  height: auto;
 }
 
-.footer-text {
+.intro-text {
+  width: 87%;
+  position: absolute;
+  top: 171%;
+  left: 58%;
+  margin-left: -50%;
   margin-top: 20px;
   font-size: 1rem;
   text-align: center;
+  border-top: 2px dashed #000;
+  font-family:'S-CoreDream-3Light';
 }
 
-.skills {
-  font-weight: bold;
-}
-
-.main-container {
+.activity-box2 {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  padding: 20px;
-}
-
-.activity-section {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.activity-card {
   background-color: #fff;
   border: 2px solid #000;
   border-radius: 20px;
-  width: 300px;
   padding: 20px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.side-circle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  border: 2px solid #000;
-  border-radius: 50%;
-  font-size: 1.2rem;
-  font-weight: bold;
   position: absolute;
-  left: -25px;
-  top: 20px;
-  background-color: #fff;
+  top: 215%;
+  left: 5%;
+  width: 40%;
+  justify-content: center;
+  height: 72%;
+  font-family:'S-CoreDream-3Light';
 }
 
-.content {
-  margin-left: 50px;
-}
-
-.card-header {
-  margin-bottom: 10px;
-}
-
-.calendar-option,
-.sms-option {
-  font-weight: bold;
-  padding: 10px;
-  background-color: #f1f1f1;
-  border-radius: 5px;
-}
-
-.calendar-details,
-.reminder-details {
-  margin-top: 10px;
-}
-
-.calendar-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 10px;
-}
-
-.icon {
-  font-size: 2rem;
-}
-
-.toggles label {
-  display: block;
-  margin-top: 5px;
-}
-
-.footer-text {
+.intro-text2 {
+  width: 87%;
+  position: absolute;
+  top: 80%;
+  left: 58%;
+  margin-left: -50%;
   margin-top: 20px;
   font-size: 1rem;
   text-align: center;
-  font-weight: bold;
+  border-top: 2px dashed #000;
+  font-family:'S-CoreDream-3Light';
+  z-index: 2;
+}
+
+.activity-box3 {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 20px;
+  padding: 20px;
+  position: absolute;
+  top: 215%;
+  right: 5%;
+  width: 40%;
+  justify-content: center;
+  height: 72%;
+  font-family:'S-CoreDream-3Light';
+}
+
+.intro-text3 {
+  width: 87%;
+  position: absolute;
+  top: 80%;
+  left: 58%;
+  margin-left: -50%;
+  margin-top: 20px;
+  font-size: 1rem;
+  text-align: center;
+  border-top: 2px dashed #000;
+  font-family:'S-CoreDream-3Light';
+  z-index: 2;
+}
+
+.activity-box4 {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 20px;
+  padding: 20px;
+  position: absolute;
+  top: 315%;
+  left: 5%;
+  width: 40%;
+  justify-content: center;
+  height: 72%;
+  font-family:'S-CoreDream-3Light';
+}
+
+.intro-text4 {
+  width: 87%;
+  position: absolute;
+  top: 80%;
+  left: 58%;
+  margin-left: -50%;
+  margin-top: 20px;
+  font-size: 1rem;
+  text-align: center;
+  border-top: 2px dashed #000;
+  font-family:'S-CoreDream-3Light';
+  z-index: 2;
+}
+
+.activity-box5 {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 20px;
+  padding: 20px;
+  position: absolute;
+  top: 315%;
+  right: 5%;
+  width: 40%;
+  justify-content: center;
+  height: 72%;
+  font-family:'S-CoreDream-3Light';
+}
+
+.intro-text5 {
+  width: 87%;
+  position: absolute;
+  top: 80%;
+  left: 58%;
+  margin-left: -50%;
+  margin-top: 20px;
+  font-size: 1rem;
+  text-align: center;
+  border-top: 2px dashed #000;
+  font-family:'S-CoreDream-3Light';
+  z-index: 2;
 }
