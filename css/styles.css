@@ -12,6 +12,7 @@ html {
 
 body {
   height: 100%;
+  width: 100%;
   margin: 0;
   border: 0;
   padding: 0;
@@ -399,4 +400,11 @@ h2 {
   background-size: cover;
   background-position: center;
   border-radius: 10px;
+}
+
+footer{
+  background-color:  black;
+  height: 20%;
+  position : relative;
+  transform : translateY(-100%);
 }
