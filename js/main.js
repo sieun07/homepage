@@ -18,3 +18,13 @@ window.addEventListener('wheel',(e)=>{
     console.log(e.deltaY)
     wrap.style.top = page * -100 + 'vh';
 },{passive:false}); // 디폴트 기능 제거 - 스크롤
+
+function btnClick() {
+    const menubar1 = document.getElementById('menubar-cal');
+    
+    if(menubar1.style.display === 'none') {
+        menubar1.style.display = 'block';
+    }else {
+        menubar1.style.display = 'none';
+    }
+  }
