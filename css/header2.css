@@ -1,272 +1,375 @@
 @font-face {
-  font-family: 'S-CoreDream-3Light';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+  font-family: 'MinSans-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
-header {
-  position: absolute;
-  top: 0%;
-  width: 100%;
+body {
+  background-color: black;
+}
+
+.header {
   height: 10%;
-  background-color: #fff;
+  padding: 0px 10px;
   border-bottom: 1px solid #ddd;
 }
 
-.header_logo {
-  width: 5%;
-  height: auto;
+.logo {
+  position: absolute;
+  top: 1%;
+  left: 2%;
   margin: 0%;
+  cursor: pointer;
+  font-size: 30px;
+  color: white;
 }
 
-.menus {
+.main_menu {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 85%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: flex-end;
-  margin-top: -5.3%;
+  flex-direction: row;
 }
 
-.menu {
-  margin: 1%;
-  width: 9%;
-  background: white;
-  border-radius: 10px;
-  padding: 0.5%;
-  text-align: center;
-  cursor: pointer;
-  font-size: 120%;
-  font-family: 'S-CoreDream-3Light';
-  font-weight: bold;
-}
-
-.logiout-button {
-  position: relative;
-  background: #ffd700;
-  color: black;
-  border-radius: 10px;
+.text {
+  color: white;
   display: flex;
-  justify-content: center;
-  cursor: pointer;
-  margin: 1%;
+  text-align: center;
   width: 9%;
-  padding: 0.5%;
-  font-size: 100%;
+  height: 35px;
   font-family: 'S-CoreDream-3Light';
-  font-weight: bold;
-}
-
-#menubar-cal {
-  visibility: hidden;
-}
-
-#menubar-game {
-  visibility: hidden;
-}
-
-#menubar-cal1 {
-  width: 6%;
-  background: white;
-  border-radius: 10px;
-  padding: 0.5%;
-  text-align: center;
-  cursor: pointer;
-  font-size: 93%;
-  font-family: 'S-CoreDream-3Light';
-  font-weight: bold;
-  border: 1px solid black;
-  position: absolute;
-  top: 76%;
-  right: 45.9%;
+  font-size: 25px;
+  margin: 2%;
+  float: left;
   text-decoration-line: none;
-  color: black;
+  justify-content: center;
 }
 
-#menubar-cal2 {
-  width: 6%;
-  background: white;
-  border-radius: 10px;
-  padding: 0.5%;
-  text-align: center;
-  cursor: pointer;
-  font-size: 93%;
-  font-family: 'S-CoreDream-3Light';
-  font-weight: bold;
-  border: 1px solid black;
+.sub_menu {
   position: absolute;
-  top: 123%;
-  right: 45.9%;
-  text-decoration-line: none;
-  color: black;
+  top: 8%;
+  right: 0%;
+  width: 100%;
+  height: 10%;
+  background-color: white;
+  opacity: 0.8;
 }
 
-#menubar-game1 {
-  width: 6%;
-  background: white;
-  border-radius: 10px;
-  padding: 0.5%;
-  text-align: center;
-  cursor: pointer;
-  font-size: 93%;
-  font-family: 'S-CoreDream-3Light';
-  font-weight: bold;
-  border: 1px solid black;
+.cal1 {
   position: absolute;
-  top: 76%;
-  right: 23.8%;
-  text-decoration-line: none;
-  color: black;
+  top: 9%;
+  right: 56%;
+  width: 10%;
+  height: 40%;
+  color: gray;
+  background: white;
+  font-size: 15px;
+  font-family: 'S-CoreDream-3Light';
+  border: none;
+  cursor: pointer;
 }
 
-#menubar-game2 {
-  width: 6%;
-  background: white;
-  border-radius: 10px;
-  padding: 0.5%;
-  text-align: center;
-  cursor: pointer;
-  font-size: 93%;
-  font-family: 'S-CoreDream-3Light';
-  font-weight: bold;
-  border: 1px solid black;
+.cal2 {
   position: absolute;
-  top: 123%;
-  right: 23.8%;
-  text-decoration-line: none;
-  color: black;
+  top: 50%;
+  right: 56%;
+  width: 10%;
+  height: 40%;
+  color: gray;
+  background: white;
+  font-size: 15px;
+  font-family: 'S-CoreDream-3Light';
+  border: none;
+  cursor: pointer;
+}
+
+.game1 {
+  position: absolute;
+  top: 10%;
+  right: 33.5%;
+  width: 10%;
+  height: 40%;
+  color: gray;
+  background: white;
+  font-size: 15px;
+  font-family: 'S-CoreDream-3Light';
+  border: none;
+  cursor: pointer;
+}
+
+.game2 {
+  position: absolute;
+  top: 50%;
+  right: 33.5%;
+  width: 10%;
+  height: 40%;
+  color: gray;
+  background: white;
+  font-size: 15px;
+  font-family: 'S-CoreDream-3Light';
+  border: none;
+  cursor: pointer;
+}
+
+.main_menu:hover~.sub_menu {
+  display: block;
+}
+
+.sub_menu:hover {
+  display: block;
+}
+
+.sub_menu {
+  display: none;
 }
 
 @media (max-width: 768px) {
 
-  header {
-      position: absolute;
-      top: 0%;
-      width: 100%;
-      height: 9%;
-      background-color: #fff;
-      border-bottom: 1px solid #ddd;
+  .logo {
+    position: absolute;
+    top: 1%;
+    left: 2%;
+    margin: 0%;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
   }
 
-  .header_logo {
-      width: 6%;
-      height: auto;
-      margin: 3% 1% 2% 1%;
+  .main_menu {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 85%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
   }
 
-  .menus {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-      margin-top: -10.3%;
+  .text {
+    color: white;
+    display: flex;
+    text-align: center;
+    width: 20%;
+    height: 35px;
+    font-family: 'S-CoreDream-3Light';
+    font-size: 18px;
+    margin: 2%;
+    float: left;
+    text-decoration-line: none;
+    justify-content: center;
   }
 
-  .menu {
-      margin: 1% 1% 2% 1%;
-      width: 17%;
-      background: white;
-      border-radius: 10px;
-      padding: 0.5%;
-      text-align: center;
-      cursor: pointer;
-      font-size: 110%;
-      font-family: 'S-CoreDream-3Light';
-      font-weight: bold;
+  .sub_menu {
+    position: absolute;
+    top: 5%;
+    right: 0%;
+    width: 100%;
+    height: 8%;
+    background-color: white;
+    opacity: 0.8;
   }
 
-  .logout-button {
-      position: relative;
-      background: #ffd700;
-      color: black;
-      border-radius: 10px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-      margin: 1%;
-      width: 10%;
-      padding: 0.5%;
-      font-size: 70%;
-      font-family: 'S-CoreDream-3Light';
-      font-weight: bold;
+  .cal1 {
+    position: absolute;
+    top: 9%;
+    right: 69%;
+    width: 20%;
+    height: 40%;
+    color: gray;
+    background: white;
+    font-size: 12px;
+    font-family: 'S-CoreDream-3Light';
+    border: none;
+    cursor: pointer;
   }
 
-  #menubar-cal {
-      visibility: hidden;
+  .cal2 {
+    position: absolute;
+    top: 50%;
+    right: 69%;
+    width: 20%;
+    height: 40%;
+    color: gray;
+    background: white;
+    font-size: 12px;
+    font-family: 'S-CoreDream-3Light';
+    border: none;
+    cursor: pointer;
   }
 
-  #menubar-game {
-      visibility: hidden;
+  .game1 {
+    position: absolute;
+    top: 10%;
+    right: 43%;
+    width: 20%;
+    height: 40%;
+    color: gray;
+    background: white;
+    font-size: 12px;
+    font-family: 'S-CoreDream-3Light';
+    border: none;
+    cursor: pointer;
   }
 
-  #menubar-cal1 {
-      width: 14%;
-      background: white;
-      border-radius: 10px;
-      padding: 0.6%;
-      text-align: center;
-      cursor: pointer;
-      font-size: 75%;
-      font-family: 'S-CoreDream-3Light';
-      font-weight: bold;
-      border: 1px solid black;
-      position: absolute;
-      top: 71%;
-      right: 74.8%;
-      text-decoration-line: none;
-      color: black;
+  .game2 {
+    position: absolute;
+    top: 50%;
+    right: 43%;
+    width: 20%;
+    height: 40%;
+    color: gray;
+    background: white;
+    font-size: 12px;
+    font-family: 'S-CoreDream-3Light';
+    border: none;
+    cursor: pointer;
   }
 
-  #menubar-cal2 {
-      width: 14%;
-      background: white;
-      border-radius: 10px;
-      padding: 0.6%;
-      text-align: center;
-      cursor: pointer;
-      font-size: 75%;
-      font-family: 'S-CoreDream-3Light';
-      font-weight: bold;
-      border: 1px solid black;
-      position: absolute;
-      top: 106%;
-      right: 74.8%;
-      text-decoration-line: none;
-      color: black;
+  .main_menu:hover~.sub_menu {
+    display: block;
   }
 
-  #menubar-game1 {
-      width: 14%;
-      background: white;
-      border-radius: 10px;
-      padding: 0.6%;
-      text-align: center;
-      cursor: pointer;
-      font-size: 75%;
-      font-family: 'S-CoreDream-3Light';
-      font-weight: bold;
-      border: 1px solid black;
-      position: absolute;
-      top: 71%;
-      right: 36.5%;
-      text-decoration-line: none;
-      color: black;
+  .sub_menu:hover {
+    display: block;
   }
 
-  #menubar-game2 {
-      width: 14%;
-      background: white;
-      border-radius: 10px;
-      padding: 0.6%;
-      text-align: center;
-      cursor: pointer;
-      font-size: 75%;
-      font-family: 'S-CoreDream-3Light';
-      font-weight: bold;
-      border: 1px solid black;
-      position: absolute;
-      top: 106%;
-      right: 36.5%;
-      text-decoration-line: none;
-      color: black;
+  .sub_menu {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1222px) {
+  .main_menu {
+    position: absolute;
+    top: 0%;
+    right: 1%;
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+  }
+
+  .text {
+    color: white;
+    display: flex;
+    text-align: center;
+    width: 12%;
+    height: 35px;
+    font-family: 'S-CoreDream-3Light';
+    font-size: 25px;
+    margin: 2%;
+    float: left;
+    text-decoration-line: none;
+    justify-content: center;
+  }
+
+  .sub_menu {
+    position: absolute;
+    top: 8%;
+    right: 0%;
+    width: 100%;
+    height: 10%;
+    background-color: white;
+    opacity: 0.8;
+  }
+
+  .cal1 {
+    position: absolute;
+    top: 9%;
+    right: 70%;
+    width: 20%;
+    height: 40%;
+    color: gray;
+    background: white;
+    font-size: 15px;
+    font-family: 'S-CoreDream-3Light';
+    border: none;
+    cursor: pointer;
+  }
+
+  .cal2 {
+    position: absolute;
+    top: 50%;
+    right: 70%;
+    width: 20%;
+    height: 40%;
+    color: gray;
+    background: white;
+    font-size: 15px;
+    font-family: 'S-CoreDream-3Light';
+    border: none;
+    cursor: pointer;
+  }
+
+  .game1 {
+    position: absolute;
+    top: 10%;
+    right: 41%;
+    width: 20%;
+    height: 40%;
+    color: gray;
+    background: white;
+    font-size: 15px;
+    font-family: 'S-CoreDream-3Light';
+    border: none;
+    cursor: pointer;
+  }
+
+  .game2 {
+    position: absolute;
+    top: 50%;
+    right: 41%;
+    width: 20%;
+    height: 40%;
+    color: gray;
+    background: white;
+    font-size: 15px;
+    font-family: 'S-CoreDream-3Light';
+    border: none;
+    cursor: pointer;
+  }
+
+  .login1 {
+    position: absolute;
+    top: 10%;
+    right: 1%;
+    width: 10%;
+    height: 40%;
+    color: gray;
+    background: white;
+    font-size: 15px;
+    font-family: 'S-CoreDream-3Light';
+    border: none;
+    cursor: pointer;
+  }
+
+  .login2 {
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    width: 10%;
+    height: 40%;
+    color: gray;
+    background: white;
+    font-size: 15px;
+    font-family: 'S-CoreDream-3Light';
+    border: none;
+    cursor: pointer;
+  }
+
+  .main_menu:hover~.sub_menu {
+    display: block;
+  }
+
+  .sub_menu:hover {
+    display: block;
+  }
+
+  .sub_menu {
+    display: none;
   }
 }
