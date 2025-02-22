@@ -16,16 +16,19 @@
 
 .main_menu {
     position: absolute;
-    top: 1.5;
-    right: 1%;
-    width: 60%;
+    top: 0%;
+    right: 0%;
+    width: 85%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
 }
 
 .text {
     color: white;
     display: flex;
     text-align: center;
-    width: 130px;
+    width: 10.5%;
     height: 35px;
     font-family: 'S-CoreDream-3Light';
     font-size: 25px;
@@ -46,11 +49,11 @@
 }
 
 .cal1 {
-    position: relative;
-    top: 8%;
-    left: 39.5%;
+    position: absolute;
+    top: 9%;
+    right: 51%;
     width: 10%;
-    height: 20%;
+    height: 40%;
     color: gray;
     background: white;
     font-size: 15px;
@@ -60,11 +63,11 @@
 }
 
 .cal2 {
-    position: relative;
+    position: absolute;
     top: 50%;
-    left: 29%;
+    right: 51%;
     width: 10%;
-    height: 20%;
+    height: 40%;
     color: gray;
     background: white;
     font-size: 15px;
@@ -74,11 +77,11 @@
 }
 
 .game1 {
-    position: relative;
+    position: absolute;
     top: 10%;
-    left: 41.8%;
+    right: 26%;
     width: 10%;
-    height: 20%;
+    height: 40%;
     color: gray;
     background: white;
     font-size: 15px;
@@ -88,11 +91,11 @@
 }
 
 .game2 {
-    position: relative;
+    position: absolute;
     top: 50%;
-    left: 31.4%;
+    right: 26%;
     width: 10%;
-    height: 20%;
+    height: 40%;
     color: gray;
     background: white;
     font-size: 15px;
@@ -102,11 +105,11 @@
 }
 
 .login1 {
-    position: relative;
+    position: absolute;
     top: 10%;
-    left: 44%;
+    right: 1%;
     width: 10%;
-    height: 20%;
+    height: 40%;
     color: gray;
     background: white;
     font-size: 15px;
@@ -116,11 +119,11 @@
 }
 
 .login2 {
-    position: relative;
+    position: absolute;
     top: 50%;
-    left: 33.8%;
+    right: 1%;
     width: 10%;
-    height: 20%;
+    height: 40%;
     color: gray;
     background: white;
     font-size: 15px;
@@ -142,45 +145,189 @@
 }
 
 @media (max-width: 768px) {
+
+    .logo {
+        position: absolute;
+        top: 1%;
+        left: 2%;
+        margin: 0%;
+        cursor: pointer;
+        font-size: 25px;
+        color: white;
+    }
+
     .main_menu {
         position: absolute;
         top: 0%;
         right: 0%;
         width: 85%;
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
+        flex-direction: row;
     }
-
+    
     .text {
         color: white;
         display: flex;
         text-align: center;
-        width: 90px;
+        width: 20%;
         height: 35px;
         font-family: 'S-CoreDream-3Light';
         font-size: 20px;
-        margin: 3% 0% 2% 0%;
+        margin: 2%;
         float: left;
         text-decoration-line: none;
         justify-content: center;
     }
-
+    
     .sub_menu {
         position: absolute;
         top: 6%;
+        right: 0%;
+        width: 100%;
+        height: 8%;
+        background-color: white;
+        opacity: 0.8;
+    }
+    
+    .cal1 {
+        position: absolute;
+        top: 9%;
+        right: 65%;
+        width: 20%;
+        height: 40%;
+        color: gray;
+        background: white;
+        font-size: 13px;
+        font-family: 'S-CoreDream-3Light';
+        border: none;
+        cursor: pointer;
+    }
+    
+    .cal2 {
+        position: absolute;
+        top: 50%;
+        right: 65%;
+        width: 20%;
+        height: 40%;
+        color: gray;
+        background: white;
+        font-size: 13px;
+        font-family: 'S-CoreDream-3Light';
+        border: none;
+        cursor: pointer;
+    }
+    
+    .game1 {
+        position: absolute;
+        top: 10%;
+        right: 30%;
+        width: 20%;
+        height: 40%;
+        color: gray;
+        background: white;
+        font-size: 13px;
+        font-family: 'S-CoreDream-3Light';
+        border: none;
+        cursor: pointer;
+    }
+    
+    .game2 {
+        position: absolute;
+        top: 50%;
+        right: 30%;
+        width: 20%;
+        height: 40%;
+        color: gray;
+        background: white;
+        font-size: 13px;
+        font-family: 'S-CoreDream-3Light';
+        border: none;
+        cursor: pointer;
+    }
+    
+    .login1 {
+        position: absolute;
+        top: 10%;
+        right: -2%;
+        width: 20%;
+        height: 40%;
+        color: gray;
+        background: white;
+        font-size: 13px;
+        font-family: 'S-CoreDream-3Light';
+        border: none;
+        cursor: pointer;
+    }
+    
+    .login2 {
+        position: absolute;
+        top: 50%;
+        right: -2%;
+        width: 20%;
+        height: 40%;
+        color: gray;
+        background: white;
+        font-size: 13px;
+        font-family: 'S-CoreDream-3Light';
+        border: none;
+        cursor: pointer;
+    }
+    
+    .main_menu:hover~.sub_menu {
+        display: block;
+    }
+    
+    .sub_menu:hover {
+        display: block;
+    }
+    
+    .sub_menu {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1222px) {
+    .main_menu {
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        width: 85%;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+    
+    .text {
+        color: white;
+        display: flex;
+        text-align: center;
+        width: 10.5%;
+        height: 35px;
+        font-family: 'S-CoreDream-3Light';
+        font-size: 25px;
+        margin: 2%;
+        float: left;
+        text-decoration-line: none;
+        justify-content: center;
+    }
+    
+    .sub_menu {
+        position: absolute;
+        top: 8%;
         right: 0%;
         width: 100%;
         height: 10%;
         background-color: white;
         opacity: 0.8;
     }
-
+    
     .cal1 {
-        position: relative;
-        top: 0%;
-        left: 16.5%;
-        width: 15%;
-        height: 50%;
+        position: absolute;
+        top: 9%;
+        right: 51%;
+        width: 10%;
+        height: 40%;
         color: gray;
         background: white;
         font-size: 15px;
@@ -188,13 +335,13 @@
         border: none;
         cursor: pointer;
     }
-
+    
     .cal2 {
-        position: relative;
-        top: 45%;
-        left: -7%;
-        width: 30%;
-        height: 30%;
+        position: absolute;
+        top: 50%;
+        right: 51%;
+        width: 10%;
+        height: 40%;
         color: gray;
         background: white;
         font-size: 15px;
@@ -202,13 +349,13 @@
         border: none;
         cursor: pointer;
     }
-
+    
     .game1 {
-        position: relative;
-        top: 0%;
-        left: 0%;
-        width: 20%;
-        height: 32%;
+        position: absolute;
+        top: 10%;
+        right: 26%;
+        width: 10%;
+        height: 40%;
         color: gray;
         background: white;
         font-size: 15px;
@@ -216,13 +363,13 @@
         border: none;
         cursor: pointer;
     }
-
+    
     .game2 {
-        position: relative;
-        top: 45%;
-        left: -21%;
-        width: 20%;
-        height: 20%;
+        position: absolute;
+        top: 50%;
+        right: 26%;
+        width: 10%;
+        height: 40%;
         color: gray;
         background: white;
         font-size: 15px;
@@ -230,13 +377,13 @@
         border: none;
         cursor: pointer;
     }
-
+    
     .login1 {
-        position: relative;
-        top: -40%;
-        left: 85%;
-        width: 12%;
-        height: 24%;
+        position: absolute;
+        top: 10%;
+        right: 1%;
+        width: 10%;
+        height: 40%;
         color: gray;
         background: white;
         font-size: 15px;
@@ -244,13 +391,13 @@
         border: none;
         cursor: pointer;
     }
-
+    
     .login2 {
-        position: relative;
-        top: 5%;
-        left: 70.8%;
-        width: 15%;
-        height: 20%;
+        position: absolute;
+        top: 50%;
+        right: 1%;
+        width: 10%;
+        height: 40%;
         color: gray;
         background: white;
         font-size: 15px;
@@ -258,15 +405,15 @@
         border: none;
         cursor: pointer;
     }
-
+    
     .main_menu:hover~.sub_menu {
         display: block;
     }
-
+    
     .sub_menu:hover {
         display: block;
     }
-
+    
     .sub_menu {
         display: none;
     }
