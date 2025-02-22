@@ -63,7 +63,7 @@ body {
 
 .one_section::before {
   content: "";
-  background: url(/img/index.jpg);
+  background: url(/img/index/index.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
