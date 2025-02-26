@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/header2.css">
-    <title>header</title>
-</head>
-<body>
-  <header class="header">
-    <a class="logo">GB</a>
 
-    <div class="main_menu">
-      <a class="text" href="#">Calender</a>
-      <a class="text" href="#">Save</a>
-      <a class="text" href="#">Game</a>
-      <a class="text" href="#">Awards</a>
-      <a class="text" href="#">Logout</a>
-      <a class="text" href="#">Mypage</a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/header2.css">
+  <title>header</title>
+</head>
+
+<body>
+  <section class="container">
+    <header class="header">
+      <a class="logo">GB</a>
+
+      <div class="main_menu">
+        <a class="text" href="#">Calender</a>
+        <a class="text" href="#">Save</a>
+        <a class="text" href="#">Game</a>
+        <a class="text" href="#">Awards</a>
+        {% if session['id'] %}
+        <button class="text" onClick="location.href='/users/logout.do'">LOGOUT</button>
+        <a class="text" href="/mypage">
+          <img src="{{ url_for('static', filename='uploads/' + (session.get('profile_pic') or 'default.jpg')) }}"
+            alt="Profile" class="profile-pic">
+        </a>
+        {% else %}
+        <button class="login-button" onClick="location.href='/login'">LOGIN</button> {% endif %}
+    </header>
     </div>
 
     <div class="sub_menu">
@@ -25,6 +35,8 @@
       <button class="game1" href="#">사다리타기</button>
       <button class="game2" href="#">룰렛돌리기</button>
     </div>
-  </header>
+    </header>
+  </section>
 </body>
+
 </html>

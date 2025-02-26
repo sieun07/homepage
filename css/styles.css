@@ -136,30 +136,6 @@ body {
   transform: translateY(-10px);
 }
 
-.intro_card2 {
-  background-color: #000;
-  color: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  width: 250px;
-  height: 300px;
-  position: relative;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-top: 15%;
-}
-
-.intro_card2>p {
-  margin-top: -30%;
-}
-
-.intro_card2:hover {
-  transform: translateY(-10px);
-}
-
 .icon {
   height: 50px;
   margin: 20px 0;
@@ -307,7 +283,7 @@ footer {
   transform: translateY(-100%);
 }
 
-#first {
+.first {
   width: 10%;
   position: absolute;
   top: 1%;
@@ -318,18 +294,18 @@ footer {
   align-items: flex-start;
 }
 
-#first>p {
+.first>p {
   font-size: 18px;
 }
 
-#first>a {
+.first>a {
   font-size: 13px;
   color: white;
   margin: 4% 0%;
   text-decoration-line: none
 }
 
-#second {
+.second {
   width: 10%;
   position: absolute;
   top: 7%;
@@ -340,14 +316,14 @@ footer {
   align-items: flex-start;
 }
 
-#second>a {
+.second>a {
   font-size: 18px;
   color: white;
   margin: 4% 0%;
   text-decoration-line: none
 }
 
-#third {
+.third {
   width: 10%;
   position: absolute;
   top: 1%;
@@ -358,18 +334,18 @@ footer {
   align-items: flex-start;
 }
 
-#third>p {
+.third>p {
   font-size: 18px;
 }
 
-#third>a {
+.third>a {
   font-size: 13px;
   color: white;
   margin: 4% 0%;
   text-decoration-line: none
 }
 
-#fourd {
+.fourd {
   width: 10%;
   position: absolute;
   top: 1%;
@@ -380,18 +356,18 @@ footer {
   align-items: flex-start;
 }
 
-#fourd>p {
+.fourd>p {
   font-size: 18px;
 }
 
-#fourd>a {
+.fourd>a {
   font-size: 13px;
   color: white;
   margin: 4% 0%;
   text-decoration-line: none
 }
 
-#p1 {
+.p1 {
   width: 100%;
   height: 40%;
   position: absolute;
@@ -414,7 +390,7 @@ footer > hr {
   border-width: 1px 0 0 0;
 }
 
-#p2 {
+.p2 {
   width: 100%;
   height: 40%;
   position: absolute;
@@ -682,7 +658,7 @@ footer > hr {
     transform: translateY(-100%);
   }
   
-  #first {
+  .first {
     width: 15%;
     position: absolute;
     top: 1%;
@@ -693,18 +669,18 @@ footer > hr {
     align-items: flex-start;
   }
   
-  #first>p {
+  .first>p {
     font-size: 15px;
   }
   
-  #first>a {
+  .first>a {
     font-size: 10px;
     color: white;
     margin: 4% 0%;
     text-decoration-line: none
   }
   
-  #second {
+  .second {
     width: 15%;
     position: absolute;
     top: 8%;
@@ -715,14 +691,14 @@ footer > hr {
     align-items: flex-start;
   }
   
-  #second>a {
+  .second>a {
     font-size: 15px;
     color: white;
     margin: 4% 0%;
     text-decoration-line: none
   }
   
-  #third {
+  .third {
     width: 15%;
     position: absolute;
     top: 1%;
@@ -733,18 +709,18 @@ footer > hr {
     align-items: flex-start;
   }
   
-  #third>p {
+  .third>p {
     font-size: 15px;
   }
   
-  #third>a {
+  .third>a {
     font-size: 10px;
     color: white;
     margin: 4% 0%;
     text-decoration-line: none
   }
   
-  #fourd {
+  .fourd {
     width: 15%;
     position: absolute;
     top: 1%;
@@ -755,18 +731,18 @@ footer > hr {
     align-items: flex-start;
   }
   
-  #fourd>p {
+  .fourd>p {
     font-size: 15px;
   }
   
-  #fourd>a {
+  .fourd>a {
     font-size: 10px;
     color: white;
     margin: 4% 0%;
     text-decoration-line: none
   }
   
-  #p1 {
+  .p1 {
     width: 100%;
     height: 40%;
     position: absolute;
@@ -789,7 +765,7 @@ footer > hr {
     border-width: 1px 0 0 0;
   }
   
-  #p2 {
+  .p2 {
     width: 100%;
     height: 40%;
     position: absolute;
@@ -994,7 +970,7 @@ footer > hr {
     transform: translateY(-100%);
   }
   
-  #first {
+  .first {
     width: 10%;
     position: absolute;
     top: 1%;
@@ -1005,18 +981,18 @@ footer > hr {
     align-items: flex-start;
   }
   
-  #first>p {
+  .first>p {
     font-size: 18px;
   }
   
-  #first>a {
+  .first>a {
     font-size: 13px;
     color: white;
     margin: 4% 0%;
     text-decoration-line: none
   }
   
-  #second {
+  .second {
     width: 10%;
     position: absolute;
     top: 8%;
@@ -1027,14 +1003,14 @@ footer > hr {
     align-items: flex-start;
   }
   
-  #second>a {
+  .second>a {
     font-size: 18px;
     color: white;
     margin: 4% 0%;
     text-decoration-line: none
   }
   
-  #third {
+  .third {
     width: 10%;
     position: absolute;
     top: 1%;
@@ -1045,18 +1021,18 @@ footer > hr {
     align-items: flex-start;
   }
   
-  #third>p {
+  .third>p {
     font-size: 18px;
   }
   
-  #third>a {
+  .third>a {
     font-size: 13px;
     color: white;
     margin: 4% 0%;
     text-decoration-line: none
   }
   
-  #fourd {
+  .fourd {
     width: 10%;
     position: absolute;
     top: 1%;
@@ -1067,18 +1043,18 @@ footer > hr {
     align-items: flex-start;
   }
   
-  #fourd>p {
+  .fourd>p {
     font-size: 18px;
   }
   
-  #fourd>a {
+  .fourd>a {
     font-size: 13px;
     color: white;
     margin: 4% 0%;
     text-decoration-line: none
   }
   
-  #p1 {
+  .p1 {
     width: 100%;
     height: 40%;
     position: absolute;
@@ -1101,7 +1077,7 @@ footer > hr {
     border-width: 1px 0 0 0;
   }
   
-  #p2 {
+  .p2 {
     width: 100%;
     height: 40%;
     position: absolute;
