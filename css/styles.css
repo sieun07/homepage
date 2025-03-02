@@ -100,8 +100,17 @@ body {
 
 .two_title {
   color: #333;
-  font-size: 2.5em;
+  font-size: 3em;
+  margin: 10% 3% 3% 3%;
+  width: 50%;
+  font-family: 'MinSans-Regular';
+}
+
+.introduce {
   margin: 3%;
+  width: 50%;
+  font-family: 'MinSans-Regular';
+  font-size: 18px;
 }
 
 .intro_card-container {
@@ -109,7 +118,11 @@ body {
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
-  width: 100%;
+  width: 50%;
+  flex-direction: row;
+  margin-left: 50%;
+  margin-top: -37%;
+  align-items: center;
 }
 
 .intro_card {
@@ -118,7 +131,7 @@ body {
   border-radius: 10px;
   padding: 20px;
   width: 250px;
-  height: 300px;
+  height: 280px;
   position: relative;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s;
@@ -139,6 +152,134 @@ body {
 .icon {
   height: 50px;
   margin: 20px 0;
+}
+
+.three_title {
+  color: #333;
+  font-size: 3em;
+  margin: 3% 3% 0% 3%;
+  width: 50%;
+  font-family: 'MinSans-Regular';
+}
+
+.teacher_card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: row;
+  margin-top: 0%;
+  align-items: center;
+}
+
+.teacher_card {
+  width: 8%;
+  height: 28%;
+}
+
+.teacher_card>img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.teacher_card>p {
+  margin: 0%;
+  width: 100%;
+  font-family: 'MinSans-Regular';
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.grade3_card-container {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: row;
+  margin-top: 1.5%;
+  align-items: center;
+}
+
+.grade3_card {
+  width: 8%;
+  height: 28%;
+}
+
+.grade3_card>img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.grade3_card>p {
+  margin: 0%;
+  width: 100%;
+  font-family: 'MinSans-Regular';
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.grade2_card-container {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: row;
+  margin-top: 1.5%;
+  align-items: center;
+}
+
+.grade2_card {
+  width: 8%;
+  height: 28%;
+}
+
+.grade2_card>img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.grade2_card>p {
+  margin: 0%;
+  width: 100%;
+  font-family: 'MinSans-Regular';
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.grade1_card-container {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: row;
+  margin-top: 1.5%;
+  align-items: center;
+}
+
+.grade1_card {
+  width: 8%;
+  height: 28%;
+}
+
+.grade1_card>img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.grade1_card>p {
+  margin: 0%;
+  width: 100%;
+  font-family: 'MinSans-Regular';
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
 }
 
 .Awards {
@@ -381,7 +522,7 @@ footer {
   font-size: 12px;
 }
 
-footer > hr {
+footer>hr {
   width: 40%;
   position: absolute;
   top: 60%;
@@ -657,7 +798,7 @@ footer > hr {
     position: relative;
     transform: translateY(-100%);
   }
-  
+
   .first {
     width: 15%;
     position: absolute;
@@ -668,18 +809,18 @@ footer > hr {
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .first>p {
     font-size: 15px;
   }
-  
+
   .first>a {
     font-size: 10px;
     color: white;
     margin: 4% 0%;
     text-decoration-line: none
   }
-  
+
   .second {
     width: 15%;
     position: absolute;
@@ -690,14 +831,14 @@ footer > hr {
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .second>a {
     font-size: 15px;
     color: white;
     margin: 4% 0%;
     text-decoration-line: none
   }
-  
+
   .third {
     width: 15%;
     position: absolute;
@@ -708,18 +849,18 @@ footer > hr {
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .third>p {
     font-size: 15px;
   }
-  
+
   .third>a {
     font-size: 10px;
     color: white;
     margin: 4% 0%;
     text-decoration-line: none
   }
-  
+
   .fourd {
     width: 15%;
     position: absolute;
@@ -730,18 +871,18 @@ footer > hr {
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .fourd>p {
     font-size: 15px;
   }
-  
+
   .fourd>a {
     font-size: 10px;
     color: white;
     margin: 4% 0%;
     text-decoration-line: none
   }
-  
+
   .p1 {
     width: 100%;
     height: 40%;
@@ -755,8 +896,8 @@ footer > hr {
     text-align: left;
     font-size: 10px;
   }
-  
-  footer > hr {
+
+  footer>hr {
     width: 40%;
     position: absolute;
     top: 60%;
@@ -764,7 +905,7 @@ footer > hr {
     color: rgb(56, 56, 56);
     border-width: 1px 0 0 0;
   }
-  
+
   .p2 {
     width: 100%;
     height: 40%;
@@ -969,7 +1110,7 @@ footer > hr {
     position: relative;
     transform: translateY(-100%);
   }
-  
+
   .first {
     width: 10%;
     position: absolute;
@@ -980,18 +1121,18 @@ footer > hr {
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .first>p {
     font-size: 18px;
   }
-  
+
   .first>a {
     font-size: 13px;
     color: white;
     margin: 4% 0%;
     text-decoration-line: none
   }
-  
+
   .second {
     width: 10%;
     position: absolute;
@@ -1002,14 +1143,14 @@ footer > hr {
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .second>a {
     font-size: 18px;
     color: white;
     margin: 4% 0%;
     text-decoration-line: none
   }
-  
+
   .third {
     width: 10%;
     position: absolute;
@@ -1020,18 +1161,18 @@ footer > hr {
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .third>p {
     font-size: 18px;
   }
-  
+
   .third>a {
     font-size: 13px;
     color: white;
     margin: 4% 0%;
     text-decoration-line: none
   }
-  
+
   .fourd {
     width: 10%;
     position: absolute;
@@ -1042,18 +1183,18 @@ footer > hr {
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .fourd>p {
     font-size: 18px;
   }
-  
+
   .fourd>a {
     font-size: 13px;
     color: white;
     margin: 4% 0%;
     text-decoration-line: none
   }
-  
+
   .p1 {
     width: 100%;
     height: 40%;
@@ -1067,8 +1208,8 @@ footer > hr {
     text-align: left;
     font-size: 12px;
   }
-  
-  footer > hr {
+
+  footer>hr {
     width: 40%;
     position: absolute;
     top: 60%;
@@ -1076,7 +1217,7 @@ footer > hr {
     color: rgb(56, 56, 56);
     border-width: 1px 0 0 0;
   }
-  
+
   .p2 {
     width: 100%;
     height: 40%;
