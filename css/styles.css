@@ -142,7 +142,7 @@ body {
 }
 
 .intro_card>p {
-  margin-top: -30%;
+  margin-top: -19%;
 }
 
 .intro_card:hover {
@@ -190,6 +190,11 @@ body {
   font-size: 15px;
   display: flex;
   justify-content: center;
+}
+
+.teacher_card > img:hover {
+  opacity: 0.5;
+  transform: 3s;
 }
 
 .grade3_card-container {
@@ -300,7 +305,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 32px;
   padding: 2%;
-  background-color: white;
+  background-color: #F4F4F4;
 }
 
 .card {
@@ -336,7 +341,7 @@ body {
 
 .show-more {
   margin-top: 0%;
-  background-color: white;
+  background-color: #F4F4F4;
 }
 
 .show-more button {
@@ -380,8 +385,8 @@ body {
   background: #fff;
   border: 1px solid #ccc;
   border-radius: 15px;
-  width: 25%;
-  height: 50%;
+  width: 350px;
+  height: 300px;
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: relative;
