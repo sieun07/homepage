@@ -120,8 +120,9 @@ body {
   flex-wrap: wrap;
   width: 50%;
   flex-direction: row;
-  margin-left: 50%;
-  margin-top: -37%;
+  position: absolute;
+  top: 100%;
+  right: 0%;
   align-items: center;
 }
 
